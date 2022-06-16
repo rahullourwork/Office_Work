@@ -1,0 +1,512 @@
+body {}
+
+* {
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.view_demo {
+    background-color: white;
+    color: black;
+    margin-top: 5vh;
+    ;
+    margin-left: 15vw;
+    margin-right: 1vw;
+    justify-content: center;
+    height: 6vh;
+    width: 9vw;
+
+}
+
+.learn_more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 9vw;
+    justify-content: center;
+
+}
+
+header {
+    background-image: url("back-header.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    color: white;
+    padding: 5px;
+    width: 100%;
+
+}
+
+header h1 {
+    margin-top: 35vh;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    justify-content: center;
+}
+
+.nav_main {
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+button {
+    padding: 6px;
+    width: 7vw;
+    height: 6vh;
+    font-size: inherit;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px#201e1ea1;
+    color: white;
+    background-color: rgb(228, 19, 19);
+
+}
+
+nav li p {
+
+    display: inline;
+    margin-right: 20vw;
+    margin-left: 30vw;
+}
+
+nav ul {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1%;
+    box-shadow: 1px 1px 2px#2b2828ab;
+    width: 100%;
+    height: 7vh;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 7px;
+    justify-content: right;
+}
+
+footer {
+
+    height: 10vh;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.boxes {
+    display: flex;
+    height: 40vh;
+
+}
+
+.boxes .box1 {
+    padding-top: 10vh;
+    background-color: darkblue;
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.boxes .box2 {
+
+    background-color: purple;
+    padding-top: 10vh;
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxes .box3 {
+    background-color: blueviolet;
+    padding-top: 10vh;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+}
+
+.boxes .box4 {
+    background-color: rgb(58, 171, 209);
+    padding-top: 10vh;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+}
+
+.boxes h3 {
+    color: white;
+}
+
+.section1 .top {
+    padding-top: 15vh;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+
+}
+
+.section1 .top p {
+    padding-top: 5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    margin-bottom: 10vh;
+}
+
+.section1 .bottom {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.section2 .top {
+    padding-top: 15vh;
+    font-size: large;
+}
+
+.section2 .top h1 {
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.section2 .top p {
+    margin-left: 15vw;
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 6vh;
+
+
+}
+
+.section2 .middle img {
+    margin-left: 10vw;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 3px;
+    margin-top: 5vh;
+
+}
+
+.section2 .middle {
+
+    width: 90vw;
+    display: flex;
+    margin-bottom: 10vh;
+    margin-top: 15vh;
+
+
+}
+
+.section2 .middle .content {
+    display: block;
+    margin-left: 10vw;
+}
+
+.section2 h2 {
+    display: inline;
+}
+
+.section2 .bottom img {
+    border-radius: 3px;
+    width: 40vw;
+    height: 50vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+
+
+}
+
+.section2 .bottom {
+    margin-top: 10vh;
+    display: flex;
+    width: 90vw;
+    margin-bottom: 10vh;
+
+
+
+}
+
+.section2 .bottom .content {
+    display: block;
+    margin-left: 10vw;
+
+}
+
+.section3 {
+    background-color: blue;
+}
+
+.section3 .top h1 {
+    margin-bottom: 5vh;
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.section3 .top {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    margin-bottom: 1vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 10vh;
+}
+
+.section3 .bottom {
+
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    color: white;
+    padding-bottom: 5vh;
+}
+.section3 .bottom p{
+    font-weight: 1000;
+}
+
+.section3 .bottom h1 {
+    font-size: 4em;
+   
+    font-weight: normal;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.section3 .button1 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 9vw;
+    justify-content: center;
+}
+
+.section3 .button2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 9vw;
+    justify-content: center;
+}
+
+.section3 .button3 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 9vw;
+    justify-content: center;
+}
+
+
+.section3 .bottom .box1 {
+    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)),url('/section-3.jpg');
+    background-size: auto 95vh;
+    padding-top: 5vh;
+    line-height: 10vh;
+    border-radius: 5px;
+    height: 90vh;
+    width: 70vw;
+    justify-content: center;
+    text-align: center;
+
+    margin-right: 1vw;
+    /* background-color: red; */
+}
+
+.section3 .bottom .box2 {
+    background-image: linear-gradient(to bottom, rgba(113, 172, 240, 0.658), rgba(60, 116, 102, 0)),url('/section-3.jpg');
+    background-size: auto 95vh;
+    padding-top: 5vh;
+    line-height: 10vh;
+    border-radius: 5px;
+    height: 90vh;
+    width: 70vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    justify-content: center;
+    /* background-color: greenyellow; */
+
+}
+
+.section3 .bottom .box3 {
+    background-image: linear-gradient(to bottom, rgba(255, 104, 78, 0.719), rgba(134, 88, 88, 0)),url('/section-3.jpg');
+    background-size: auto 95vh;
+    padding-top: 5vh;
+    line-height: 10vh;
+    height: 90vh;
+    width: 70vw;
+    margin-left: 1vw;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.section4 {
+    background-color: white;
+    
+}
+
+.section4 .top h1 {
+    margin-bottom: 5vh;
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.section4 .top {
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    margin-bottom: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 10vh;
+}
+.section4 .bottom{
+   
+    display: flex;
+    margin: 30px;
+}
+
+.section4 .bottom p{
+   font: bold;
+   font-weight: 500;
+   font-size: 30px;
+
+}
+.section4 .bottom small{
+    color: blue;
+    font-weight: 400;
+    font-size: 15px;
+ 
+ }
+.section4 .bottom img{
+    border-radius: 6px;
+   
+    
+    
+}
+.section4 .bottom .upper{
+  margin-left: 30vh;
+   
+    
+}
+.section4 .bottom .container{
+    margin-top: 5vh;
+     padding-left: 10px;
+    width: 20vw;
+    float: right;
+    
+}
+
+.section4 .bottom .lower{
+   
+}
+
+.section4 .bottom .box2{
+  margin-top: 10vh;
+}
+
+.section4 .bottom .box4{
+    margin-top: 10vh;
+}
+.section5{
+    padding-top: 15px;
+    color: black;
+background-image: url("/section5.jpg");
+background-size: 99vw auto ;
+background-repeat: no-repeat;
+margin-top: 10vh;
+justify-content: center;
+text-align: center;
+height: 90vh;
+}
+.section5 p{
+   color: rgb(32, 32, 78);
+}
+
+.section5 .form{
+margin-top: 30px;
+margin-left: 65px;
+border-radius: 5px;
+    width: 90vw;
+height: 70vh;
+background-color: white;
+display: flex;
+
+}
+
+#name{
+    width: 20vw;
+    padding-top: 20vh;
+    color: gray;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+}
+#email{
+    width: 20vw;
+    padding-top: 10px;
+    color: gray;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+}
+#subject{
+    width: 20vw;
+    padding-top: 10vh;
+    color: gray;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+}
+#message{
+    width: 20vw;
+    padding-top: 1vh;
+    margin-top: 20vh;
+    color: gray;
+    margin-left: -70vh;
+    font-size: 20px;
+    background-color: transparent;
+    
+    border-bottom: 1px solid #ced4da;
+    
+
+}
+.section5 .link{
+    padding-top: 30vh;
+    float: right;
+    margin-left: 30vw;
+}
+
