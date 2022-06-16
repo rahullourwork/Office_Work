@@ -272,15 +272,16 @@ footer {
     color: white;
     padding-bottom: 5vh;
 }
-.section3 .bottom p{
+
+.section3 .bottom p {
     font-weight: 1000;
 }
 
 .section3 .bottom h1 {
     font-size: 4em;
-   
+
     font-weight: normal;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .section3 .button1 {
@@ -315,7 +316,7 @@ footer {
 
 
 .section3 .bottom .box1 {
-    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)),url('/section-3.jpg');
+    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)), url('/section-3.jpg');
     background-size: auto 95vh;
     padding-top: 5vh;
     line-height: 10vh;
@@ -330,7 +331,7 @@ footer {
 }
 
 .section3 .bottom .box2 {
-    background-image: linear-gradient(to bottom, rgba(113, 172, 240, 0.658), rgba(60, 116, 102, 0)),url('/section-3.jpg');
+    background-image: linear-gradient(to bottom, rgba(113, 172, 240, 0.658), rgba(60, 116, 102, 0)), url('/section-3.jpg');
     background-size: auto 95vh;
     padding-top: 5vh;
     line-height: 10vh;
@@ -346,7 +347,7 @@ footer {
 }
 
 .section3 .bottom .box3 {
-    background-image: linear-gradient(to bottom, rgba(255, 104, 78, 0.719), rgba(134, 88, 88, 0)),url('/section-3.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 104, 78, 0.719), rgba(134, 88, 88, 0)), url('/section-3.jpg');
     background-size: auto 95vh;
     padding-top: 5vh;
     line-height: 10vh;
@@ -360,7 +361,7 @@ footer {
 
 .section4 {
     background-color: white;
-    
+
 }
 
 .section4 .top h1 {
@@ -378,85 +379,103 @@ footer {
     padding-right: 10vh;
     padding-top: 10vh;
 }
-.section4 .bottom{
-   
+
+.section4 .bottom {
+
     display: flex;
     margin: 30px;
 }
 
-.section4 .bottom p{
-   font: bold;
-   font-weight: 500;
-   font-size: 30px;
+.section4 .bottom p {
+    font: bold;
+    font-weight: 500;
+    font-size: 30px;
 
 }
-.section4 .bottom small{
+
+.section4 .bottom small {
     color: blue;
     font-weight: 400;
     font-size: 15px;
- 
- }
-.section4 .bottom img{
+
+}
+
+.section4 .bottom img {
     border-radius: 6px;
-   
-    
-    
+
+
+
 }
-.section4 .bottom .upper{
-  margin-left: 30vh;
-   
-    
+
+.section4 .bottom .upper {
+    margin-left: 30vh;
+
+
 }
-.section4 .bottom .container{
+
+.section4 .bottom .container {
     margin-top: 5vh;
-     padding-left: 10px;
+    padding-left: 10px;
     width: 20vw;
     float: right;
-    
+
 }
 
-.section4 .bottom .lower{
-   
-}
 
-.section4 .bottom .box2{
-  margin-top: 10vh;
-}
-
-.section4 .bottom .box4{
+.section4 .bottom .box2 {
     margin-top: 10vh;
 }
-.section5{
+
+.section4 .bottom .box4 {
+    margin-top: 10vh;
+}
+
+.section5 h1
+{
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.section5 {
     padding-top: 15px;
-    color: black;
-background-image: url("/section5.jpg");
-background-size: 99vw auto ;
-background-repeat: no-repeat;
-margin-top: 10vh;
-justify-content: center;
-text-align: center;
-height: 90vh;
-}
-.section5 p{
-   color: rgb(32, 32, 78);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(36, 36, 39, 0)), url('/section5.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    height: 90vh;
 }
 
-.section5 .form{
-margin-top: 30px;
-margin-left: 65px;
-border-radius: 5px;
+.section5 .top {
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 20px;
+}
+
+.section5 .form {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 65px;
+    border-radius: 5px;
     width: 90vw;
-height: 70vh;
-background-color: white;
-display: flex;
+    height: 70vh;
+    background-color: white;
+   
 
 }
 
-#name{
-    width: 20vw;
-    padding-top: 20vh;
+#name {
+    position: absolute;
+    width: 25vw;
+    padding-top: 3vh;
+    margin-left: 5vw;
+    margin-top: 10vh;
     color: gray;
-    font-size: 20px;
+    font-size: 17px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ced4da;
@@ -465,11 +484,15 @@ display: flex;
     box-shadow: none;
 
 }
-#email{
-    width: 20vw;
-    padding-top: 10px;
+
+#email {
+    position: absolute;
+    width: 25vw;
+    padding-top: 3vh;
+    margin-left: 35vw;
+    margin-top: 10vh;
     color: gray;
-    font-size: 20px;
+    font-size: 17px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ced4da;
@@ -478,11 +501,15 @@ display: flex;
     box-shadow: none;
 
 }
-#subject{
-    width: 20vw;
-    padding-top: 10vh;
+
+#subject {
+    position: absolute;
+    width: 55vw;
+    padding-top: 3vh;
+    margin-left: 5vw;
+    margin-top: 25vh;
     color: gray;
-    font-size: 20px;
+    font-size: 17px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ced4da;
@@ -491,22 +518,48 @@ display: flex;
     box-shadow: none;
 
 }
-#message{
-    width: 20vw;
-    padding-top: 1vh;
-    margin-top: 20vh;
+
+#message {
+    position: absolute;
+    width: 25vw;
+    margin-left: 5vw;
+    margin-top: 40vh;
     color: gray;
-    margin-left: -70vh;
-    font-size: 20px;
+    font-size: 17px;
     background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+
+}
+
+.section5 button {
+    display: inline;
+    padding: 6px;
+    width: 7vw;
+    height: 6vh;
+    font-size: inherit;
+    border: none;
+    margin-top: 55vh;
+    margin-left: 5vw;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px#201e1ea1;
+    color: white;
+    background-color: rgb(228, 19, 19);
+
+}
+
+
+.section5 .links-box {
+    position: absolute;
+    padding-top: 3vh;
+    margin-left: 65vw;
+    margin-top: 10vh;
+    justify-content: center;
+    text-align: center;
     
-    border-bottom: 1px solid #ced4da;
-    
 
 }
-.section5 .link{
-    padding-top: 30vh;
-    float: right;
-    margin-left: 30vw;
-}
-
