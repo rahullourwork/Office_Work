@@ -7,12 +7,24 @@ body {}
 
 }
 
+.header-banner{
+    background-image: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%), url('back-header.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    color: white;
+}
+
+.banner{
+    padding-top:50px ;
+justify-content: center;
+padding-left: 10px;
+text-align: left;
+}
+
 .view_demo {
     background-color: white;
     color: black;
-    margin-top: 5vh;
-    margin-left: 5vw;
-    margin-right: 1vw;
+    margin-right: 15px;
     justify-content: center;
     height: 8vh;
     width: 12vw;
@@ -23,46 +35,36 @@ body {}
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    margin-top: 5vh;
+    margin-top: 10px;
     height: 8vh;
     width: 12vw;
     justify-content: center;
 
 }
 
-header {
-    background-image: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%), url('back-header.jpg');
-    background-size: 100% 100%;
-    height: 100vh;
+.header-banner header {
     color: white;
-    padding: 5px;
-    width: 100%;
-
+    box-shadow: 1px 1px 3px#2b2828ab;
 }
 
-header h1 {
-    margin-top: 35vh;
-    margin-left: 5vw;
+.banner h1 {
     font-size: 40px;
-    margin-right: 10vw;
-    justify-content: center;
+    
 }
 
 .nav_main {
+    width: 50vw;
     font-weight: 700;
     line-height: 25px;
-    margin-left: 5vw;
-    margin-right: 15vw;
-    justify-content: center;
 }
 
 button {
-    padding: 6px;
-    width: 7vw;
+    padding-left: 6px;
+    width: 9vw;
     height: 6vh;
     font-size: inherit;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: 2px 2px 2px#201e1ea1;
     color: white;
     background-color: rgb(228, 19, 19);
@@ -71,49 +73,47 @@ button {
 
 nav li p {
     font-weight: 800;
-    font-size: large;
+    font-size: 20px;
     display: inline;
-    margin-right: 20vw;
-    margin-left: 30vw;
+    margin-right: 400px;
+    padding-left: 5vw;
 }
 
 nav ul {
-    position: relative;
     text-decoration: none;
-    text-align: center;
-    padding-top: 1%;
-    box-shadow: 1px 1px 2px#2b2828ab;
-    width: 100%;
-    height: 7vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 
 nav ul li {
     display: inline;
-    padding-right: 7px;
-    justify-content: right;
+    padding-right: 20px;
+    font-size: 16px;
 }
 
 footer {
 
-    height: 5vh;
+    height: 25px;
     position: relative;
     color: white;
-    padding-top: 2vh;
+    padding-top: 5px;
     justify-content: center;
     background-color: rgb(16, 16, 114);
     text-align: center;
 
 }
 
-.boxes {
+.section0 {
     display: flex;
-    height: 40vh;
     color: white;
+   }
 
-}
-
-.boxes .box1 {
-    padding-top: 10vh;
+.section0 .box1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: darkblue;
     width: 25%;
     justify-content: center;
@@ -121,82 +121,117 @@ footer {
 
 }
 
-.boxes .box2 {
-
+.section0 .box2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: purple;
-    padding-top: 10vh;
     width: 25%;
     justify-content: center;
     text-align: center;
 }
 
-.boxes .box3 {
+.section0 .box3 {
     background-color: blueviolet;
-    padding-top: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     justify-content: center;
     width: 25%;
     text-align: center;
 }
 
-.boxes .box4 {
+.section0 .box4 {
     background-color: rgb(58, 171, 209);
-    padding-top: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     justify-content: center;
     width: 25%;
     text-align: center;
 }
 
-.boxes h3 {
+.section0 h3 {
     color: white;
 }
 
 .section1 .top {
-    padding-top: 15vh;
+   
     justify-content: center;
     text-align: center;
     font-size: large;
 
 }
+.section1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section1 .top h1{
+    font-size: 40px;
+}
 
 .section1 .top p {
-    padding-top: 5vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    margin-bottom: 10vh;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .section1 .bottom {
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-bottom: 10vh;
+}
+
+.section1 .left{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section1 .middle{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section1 .right{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section2{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section2 .top {
-    padding-top: 15vh;
+
     font-size: large;
 }
 
 .section2 .top h1 {
-    margin-bottom: 6vh;
+    font-size: 40px;
+    padding-bottom: 16px;
     text-align: center;
 }
 
 .section2 .top p {
-    margin-left: 15vw;
+    padding-top: 30px;
+    margin-left: 200px;
     width: 70vw;
     text-align: center;
-    margin-bottom: 6vh;
+    margin-bottom: 12px;
 
 
 }
 
 .section2 .middle img {
-    margin-left: 10vw;
+    margin-left: 130px;
     width: 40vw;
     height: 50vh;
     border-radius: 3px;
-    margin-top: 5vh;
+    margin-top: 10px;
 
 }
 
@@ -205,14 +240,14 @@ footer {
     width: 90vw;
     display: flex;
     margin-bottom: 10vh;
-    margin-top: 15vh;
+    margin-top: 30px;
 
 
 }
 
 .section2 .middle .content {
     display: block;
-    margin-left: 10vw;
+    margin-left: 50px;
 }
 
 .section2 h2 {
@@ -223,17 +258,18 @@ footer {
     border-radius: 3px;
     width: 40vw;
     height: 50vh;
-    margin-left: 10vw;
-    margin-top: 5vh;
+    margin-left: 100px;
+    margin-top: 50px;
+    
 
 
 }
 
 .section2 .bottom {
-    margin-top: 10vh;
+    margin-top: 50px;
     display: flex;
     width: 90vw;
-    margin-bottom: 10vh;
+    margin-bottom: 20px;
 
 
 
@@ -241,18 +277,21 @@ footer {
 
 .section2 .bottom .content {
     display: block;
-    margin-left: 10vw;
+    margin-left: 140px;
+    width: 50vw;
 
 }
 
 .section3 {
     background-color: #3949ab;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section3 .top h1 {
-    margin-bottom: 5vh;
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: 200;
+    padding-bottom: 15px;
 }
 
 .section3 .top {
@@ -260,20 +299,19 @@ footer {
     justify-content: center;
     text-align: center;
     width: 90vw;
-    margin-bottom: 1vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    padding-top: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+   
 }
 
 .section3 .bottom {
 
     display: flex;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
+    padding-left: 20px;
+   padding-right: 20px;
+    padding-top: 15px;
     color: white;
-    padding-bottom: 5vh;
+    padding-bottom: 15px;
 }
 
 .section3 .bottom p {
@@ -291,7 +329,7 @@ footer {
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    margin-top: 5vh;
+    margin-top: 10px;
     height: 6vh;
     width: 9vw;
     justify-content: center;
@@ -301,7 +339,7 @@ footer {
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    margin-top: 5vh;
+    margin-top: 10px;
     height: 6vh;
     width: 9vw;
     justify-content: center;
@@ -311,7 +349,7 @@ footer {
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    margin-top: 5vh;
+    margin-top: 10px;
     height: 6vh;
     width: 9vw;
     justify-content: center;
@@ -319,9 +357,9 @@ footer {
 
 
 .section3 .bottom .box1 {
-    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)), url('/section-3.jpg');
-    background-size: auto 95vh;
-    padding-top: 5vh;
+    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)), url('section-3.jpg');
+    background-size: auto 915px;
+    padding-top: 15px;
     line-height: 10vh;
     border-radius: 5px;
     height: 90vh;
@@ -329,20 +367,20 @@ footer {
     justify-content: center;
     text-align: center;
 
-    margin-right: 1vw;
+    margin-right: 5px;
 
 }
 
 .section3 .bottom .box2 {
-    background-image: linear-gradient(to bottom, rgba(0, 62, 133, 0.938), rgba(60, 116, 102, 0)), url('/section-3.jpg');
-    background-size: auto 95vh;
-    padding-top: 5vh;
+    background-image: linear-gradient(to bottom, rgba(0, 62, 133, 0.938), rgba(60, 116, 102, 0)), url('section-3.jpg');
+    background-size: auto 915px;
+    padding-top: 15px;
     line-height: 10vh;
     border-radius: 5px;
     height: 90vh;
     width: 70vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
     justify-content: center;
     /* background-color: greenyellow; */
@@ -350,13 +388,13 @@ footer {
 }
 
 .section3 .bottom .box3 {
-    background-image: linear-gradient(to bottom, rgba(136, 20, 0, 0.849), rgba(134, 88, 88, 0)), url('/section-3.jpg');
-    background-size: auto 95vh;
-    padding-top: 5vh;
+    background-image: linear-gradient(to bottom, rgba(136, 20, 0, 0.849), rgba(134, 88, 88, 0)), url('section-3.jpg');
+    background-size: auto 915px;
+    padding-top: 15px;
     line-height: 10vh;
     height: 90vh;
     width: 70vw;
-    margin-left: 1vw;
+    margin-left: 5px;
     border-radius: 5px;
     text-align: center;
     justify-content: center;
@@ -368,8 +406,8 @@ footer {
 }
 
 .section4 .top h1 {
-    margin-bottom: 5vh;
-    font-size: 2.5em;
+   padding-bottom: 15px;
+    font-size: 40px;
     font-weight: 200;
 }
 
@@ -377,10 +415,10 @@ footer {
     justify-content: center;
     text-align: center;
     width: 90vw;
-    margin-bottom: 5vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    padding-top: 10vh;
+    margin-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .section4 .bottom {
@@ -412,13 +450,13 @@ footer {
 }
 
 .section4 .bottom .upper {
-    margin-left: 28vh;
+    margin-left: 200px;
 
 
 }
 
 .section4 .bottom .container {
-    margin-top: 5vh;
+    margin-top: 10px;
     padding-left: 10px;
     width: 20vw;
     float: right;
@@ -427,42 +465,43 @@ footer {
 
 
 .section4 .bottom .box2 {
-    margin-top: 10vh;
+    margin-top: 20px;
 }
 
 .section4 .bottom .box4 {
-    margin-top: 10vh;
+    margin-top: 20px;
 }
 
 .section5 h1 {
     color: rgb(255, 255, 255);
     justify-content: center;
     text-align: center;
-    margin-bottom: 5vh;
+    font-size: 40px;
+    padding-bottom: 15px;
 }
 
 .section5 {
     padding-top: 15px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(36, 36, 39, 0)), url('/section5.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(36, 36, 39, 0)), url('section5.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    margin-top: 10vh;
+    margin-top: 20px;
     height: 100vh;
 }
 
-.section5 .top {
+.section5 .top  {
     color: rgb(255, 255, 255);
     justify-content: center;
     text-align: center;
     width: 70vw;
-    margin-left: 15vw;
+    margin-left: 200px;
     font-size: 20px;
 }
 
 .section5 .form {
     display: flex;
     margin-top: 40px;
-    margin-left: 65px;
+    margin-left: 55px;
     border-radius: 5px;
     width: 90vw;
     height: 70vh;
@@ -474,9 +513,9 @@ footer {
 #name {
     position: absolute;
     width: 25vw;
-    padding-top: 3vh;
-    margin-left: 5vw;
-    margin-top: 10vh;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
     color: gray;
     font-size: 17px;
     background-color: transparent;
@@ -491,9 +530,9 @@ footer {
 #email {
     position: absolute;
     width: 25vw;
-    padding-top: 3vh;
-    margin-left: 35vw;
-    margin-top: 10vh;
+    padding-top: 10px;
+    margin-left: 400px;
+    margin-top: 40px;
     color: gray;
     font-size: 17px;
     background-color: transparent;
@@ -508,9 +547,9 @@ footer {
 #subject {
     position: absolute;
     width: 55vw;
-    padding-top: 3vh;
-    margin-left: 5vw;
-    margin-top: 25vh;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-top: 140px;
     color: gray;
     font-size: 17px;
     background-color: transparent;
@@ -525,8 +564,8 @@ footer {
 #message {
     position: absolute;
     width: 25vw;
-    margin-left: 5vw;
-    margin-top: 40vh;
+    margin-left: 50px;
+    margin-top: 250px;
     color: gray;
     font-size: 17px;
     background-color: transparent;
@@ -546,8 +585,8 @@ footer {
     height: 8vh;
     font-size: inherit;
     border: none;
-    margin-top: 55vh;
-    margin-left: 5vw;
+    margin-top: 350px;
+    margin-left: 50px;
     border-radius: 3px;
     box-shadow: 2px 2px 2px#201e1ea1;
     color: white;
@@ -558,9 +597,9 @@ footer {
 
 .section5 .links-box {
     position: absolute;
-    padding-top: 3vh;
-    margin-left: 65vw;
-    margin-top: 10vh;
+    padding-top: 10px;
+    margin-left: 840px;
+    margin-top: 60px;
     justify-content: center;
     text-align: center;
 
@@ -572,7 +611,7 @@ footer {
     height: 8vh;
     justify-content: center;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 18px;
     background-color: rgb(0, 0, 255);
 
 }
