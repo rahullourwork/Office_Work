@@ -1,24 +1,29 @@
-body {}
 
-* {
+*{
     font-family: sans-serif;
     margin: 0%;
     padding: 0%;
-
 }
 
-.header-banner{
+ #nav-button{
+    display: none;
+   
+}
+
+
+
+.header-banner {
     background-image: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%), url('back-header.jpg');
     background-size: 100% 100%;
     height: 100vh;
     color: white;
 }
 
-.banner{
-    padding-top:50px ;
-justify-content: center;
-padding-left: 10px;
-text-align: left;
+.banner {
+    padding-top: 250px;
+    justify-content: center;
+    padding-left: 100px;
+    text-align: left;
 }
 
 .view_demo {
@@ -44,17 +49,20 @@ text-align: left;
 
 .header-banner header {
     color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
     box-shadow: 1px 1px 3px#2b2828ab;
 }
 
 .banner h1 {
     font-size: 40px;
-    
+
 }
 
 .nav_main {
     width: 50vw;
-    font-weight: 700;
+    font-weight: 200;
     line-height: 25px;
 }
 
@@ -71,26 +79,32 @@ button {
 
 }
 
-nav li p {
+nav p {
     font-weight: 800;
     font-size: 20px;
-    display: inline;
-    margin-right: 400px;
-    padding-left: 5vw;
+    display: inline-flex;
+    padding-left: 80px;
+    padding-top: 20px;
 }
 
 nav ul {
+    display: inline;
+    float: right;
     text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 80px;
+
+
 }
 
 nav ul li {
     display: inline;
     padding-right: 20px;
     font-size: 16px;
+
 }
+
 
 footer {
 
@@ -107,7 +121,7 @@ footer {
 .section0 {
     display: flex;
     color: white;
-   }
+}
 
 .section0 .box1 {
     padding-left: 30px;
@@ -159,17 +173,19 @@ footer {
 }
 
 .section1 .top {
-   
+
     justify-content: center;
     text-align: center;
     font-size: large;
 
 }
-.section1{
+
+.section1 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.section1 .top h1{
+
+.section1 .top h1 {
     font-size: 40px;
 }
 
@@ -187,20 +203,22 @@ footer {
     display: flex;
 }
 
-.section1 .left{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.section1 .middle{
+.section1 .left {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.section1 .right{
+.section1 .middle {
     padding-left: 10px;
     padding-right: 10px;
 }
-.section2{
+
+.section1 .right {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section2 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -260,7 +278,7 @@ footer {
     height: 50vh;
     margin-left: 100px;
     margin-top: 50px;
-    
+
 
 
 }
@@ -301,14 +319,14 @@ footer {
     width: 90vw;
     padding-left: 20px;
     padding-right: 20px;
-   
+
 }
 
 .section3 .bottom {
 
     display: flex;
     padding-left: 20px;
-   padding-right: 20px;
+    padding-right: 20px;
     padding-top: 15px;
     color: white;
     padding-bottom: 15px;
@@ -320,8 +338,7 @@ footer {
 
 .section3 .bottom h1 {
     font-size: 4em;
-
-    font-weight: normal;
+    font-weight: 10;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -406,7 +423,7 @@ footer {
 }
 
 .section4 .top h1 {
-   padding-bottom: 15px;
+    padding-bottom: 15px;
     font-size: 40px;
     font-weight: 200;
 }
@@ -489,7 +506,7 @@ footer {
     height: 100vh;
 }
 
-.section5 .top  {
+.section5 .top {
     color: rgb(255, 255, 255);
     justify-content: center;
     text-align: center;
@@ -501,7 +518,7 @@ footer {
 .section5 .form {
     display: flex;
     margin-top: 40px;
-    margin-left: 55px;
+    margin-left: 65px;
     border-radius: 5px;
     width: 90vw;
     height: 70vh;
