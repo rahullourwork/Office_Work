@@ -56,7 +56,7 @@
         justify-content: center;
         font-weight: 50;
         padding-left: 40px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .view_demo {
@@ -82,27 +82,38 @@
         display: block;
         color: white;
     }
+    .section0 p{
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
 
     .section0 .box1 {
-
+        padding-left: 0;
+        padding-right: 0;
         width: 100vw;
+        line-height: 20px;
 
     }
 
     .section0 .box2 {
-
+        padding-left: 0;
+        padding-right: 0;
         width: 100vw;
 
     }
 
     .section0 .box3 {
-
+        padding-left: 0;
+        padding-right: 0;
         width: 100vw;
 
     }
 
     .section0 .box4 {
-
+        padding-left: 0;
+        padding-right: 0;
         width: 100vw;
 
     }
@@ -118,18 +129,20 @@
 
     .section1 {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 
     .section1 .top h1 {
-        font-size: 30px;
+        font-size: 33px;
+font-weight: 500;
+
     }
 
     .section1 .top p {
         padding-top: 30px;
         padding-left: 50px;
         padding-right: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
         font-size: 15px;
     }
 
@@ -138,11 +151,17 @@
         text-align: center;
         display: block;
     }
+    .section1 .bottom p{
+       padding-left: 10px;
+       padding-right: 10px;
+       
+    }
 
     .section1 .left {
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 30px;
+
     }
 
     .section1 .middle {
@@ -164,7 +183,7 @@
         padding: 0%;
         margin: 0;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 
     .section2 .top {}
@@ -175,6 +194,11 @@
         text-align: center;
     }
 
+    .section2 .top h1{
+        font-size: 33px;
+font-weight: 500;
+
+    }
     .section2 .top p {
         font: 100;
 
@@ -229,7 +253,7 @@
         margin: 0%;
         margin: 30px;
         display: block;
-        padding-bottom: 30px;
+        padding-top: 30px;
 
         width: 85vw;
         height: 40vh;
@@ -251,7 +275,7 @@
         width: 80vw;
         justify-content: center;
         text-align: center;
-        padding-left: 40px;
+        padding-left: 30px;
         margin: 10px;
         margin-bottom: 20px;
 
@@ -265,7 +289,7 @@
     .section3 {
         background-color: #3949ab;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 10px;
     }
 
     .section3 .top h1 {
@@ -291,7 +315,7 @@
         padding-right: 20px;
         padding-top: 15px;
         color: white;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
     }
 
     .section3 .bottom p {
@@ -299,9 +323,9 @@
     }
 
     .section3 .bottom h1 {
-        font-size: 4em;
-        font-weight: 10;
-        font-family: 'Courier New', Courier, monospace;
+        font-size: 33px;
+        font-weight: 500;
+        
     }
 
     .section3 .button1 {
@@ -354,9 +378,10 @@
     }
 
     .section4 .top h1 {
+        padding-top: 60px;
         padding-bottom: 15px;
-        font-size: 40px;
-        font-weight: 200;
+        font-size: 33px;
+        font-weight: 500;
     }
 
     .section4 .top {
@@ -455,15 +480,17 @@
 
         justify-content: center;
         text-align: center;
-        font-size: 30px;
+        font-size: 33px;
+        font-weight: 500;
         padding-bottom: 15px;
     }
 
     .section5 {
-        padding-top: 15px;
-        background-size: 100% 100%;
+        padding-top: 60px;
+        background-size: 1200px 1200px;
         background-repeat: no-repeat;
         margin-top: 20px;
+        padding-bottom: 20px;
         height: auto;
     }
 
