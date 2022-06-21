@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Webpage.css">
     <link rel="stylesheet" href="/mediascreen.css">
+
     <section class="header-banner">
         <header>
             <nav>
@@ -34,14 +35,16 @@
                         Contact
                     </li>
                     <li>
-                        <button>Download</button>
+                        <button id="download">Download</button>
                     </li>
                 </ul>
 
-                <span id="nav-button" class="fa-solid fa-bars fa-2x"></span>
+                <span onclick="myFunction(this)" id="nav-button" class="fa-solid fa-bars fa-2x"></span>
+
 
             </nav>
         </header>
+
         <div class="banner">
             <h1>Your Success Is Our Mission .</h1>
             <br>
@@ -60,6 +63,51 @@
 </head>
 
 <body>
+
+    <script>
+
+        function myFunction(x) {            
+            var y=document.querySelectorAll("ul > li");
+            var temp;
+            expand(temp,y);
+            if(temp==1)
+            {
+                collapse(y);
+            }
+            
+            
+        }
+
+        function expand(temp,y)
+        {
+            y[0].style.display="block";
+            y[1].style.display="block";
+            y[2].style.display="block";
+            y[3].style.display="block";
+            y[4].style.display="block";
+            y[5].style.display="block";
+            
+           console.log(y);
+           temp=1;
+           
+
+        }
+        function collapse(y){
+            y[0].style.display="none";
+            y[1].style.display="none";
+            y[2].style.display="none";
+            y[3].style.display="none";
+            y[4].style.display="none";
+            y[5].style.display="none";
+            
+           console.log(y);
+        }
+
+
+    </script>
+
+  
+
     <section class="section0">
 
         <div class="box1">
@@ -367,6 +415,9 @@
         <i class="fa-brands fa-linkedin-in fa-2x"></i>
 
     </section>
+
+   
+
 
 
 </body>

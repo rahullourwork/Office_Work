@@ -10,12 +10,31 @@
         padding-bottom: 10px;
     }
 
-    #nav-button {
-        display: inline;
+    #download{
+        /* padding-left: px; */
+        width: 25vw;
+        height: 6vh;
+        padding: 5px;
+        font-size: inherit;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 2px 2px 2px#201e1ea1;
+        color: white;
+        background-color: rgb(228, 19, 19);
     }
 
-    header nav ul {
+    #nav-button {
+        display: inline;
+        position: absolute;
+        right: 10px;
+    }
+
+    header nav ul li{
         display: none;
+    position: relative;
+    margin: 10px;
+    padding-right: 170px;
+    font-size: 16px;
     }
 
     header p {

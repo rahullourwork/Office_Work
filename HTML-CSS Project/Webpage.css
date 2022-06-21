@@ -4,11 +4,16 @@
     padding: 0%;
 }
 
-#nav-button {
-    display: none;
-
+header{
+    transition-property: height;
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
 }
 
+
+#nav-button {
+    display: none;
+}
 
 
 .header-banner {
@@ -65,7 +70,7 @@
     line-height: 25px;
 }
 
-button {
+#download {
     padding-left: 6px;
     width: 9vw;
     height: 6vh;
