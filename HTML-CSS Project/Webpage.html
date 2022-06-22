@@ -64,23 +64,88 @@
 
 <body>
 
+<script>
+     window.onscroll = function () { scrollFunction() };
+       
+       function scrollFunction() {
+             var section1 = document.getElementsByClassName("section1");
+            var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
+            if (document.documentElement.scrollTop > 1850) {
+                section1_bottom.style.animationName = "android_section1";
+                section1_bottom.style.animationDuration = "1s";
+                section1_bottom.style.animationDirection = "normal";
 
+            }
+
+            var section2 = document.getElementsByClassName("section2");
+            var section2_middle = section2[0].getElementsByClassName("middle")[0];
+            var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
+            if (document.documentElement.scrollTop > 2700) {
+                section2_middle.style.animationName = "android_section2_middle";
+                section2_middle.style.animationDuration = "1s";
+                section2_middle.style.animationDirection = "normal";
+                section2_middle.style.animationTimingFunction="ease-in";
+                
+
+            }
+            if (document.documentElement.scrollTop > 3670) {
+                section2_bottom.style.animationName = "android_section2_bottom";
+                section2_bottom.style.animationDuration = "1s";
+                section2_bottom.style.animationDirection = "normal";
+                section2_bottom.style.animationTimingFunction="ease-in";
+
+            }
+
+        }
+
+
+</script>
     <script>
         window.onscroll = function () { scrollFunction() };
-        
+       
         var h = document.getElementsByTagName("nav");
         function scrollFunction() {
-          
-            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-               
-                h[0].style.paddingBottom="2.5vh";
-                h[0].style.paddingTop="0.5vh";
-                document.getElementsByTagName("header")[0].style.backgroundColor = "blueviolet";
+
+            if (document.documentElement.scrollTop > 0) {
+
+                h[0].style.paddingBottom = "2.5vh";
+                h[0].style.paddingTop = "1vh";
+                document.getElementsByTagName("header")[0].style.backgroundColor = "darkblue";
             } else {
-                h[0].style.paddingBottom="3vh";
-                h[0].style.paddingTop="2vh";
+                h[0].style.paddingBottom = "3vh";
+                h[0].style.paddingTop = "2vh";
                 document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
             }
+
+            var section1 = document.getElementsByClassName("section1");
+            var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
+            if (document.documentElement.scrollTop > 520) {
+                section1_bottom.style.animationName = "section1";
+                section1_bottom.style.animationDuration = "1s";
+                section1_bottom.style.animationDirection = "normal";
+
+            }
+
+            var section2 = document.getElementsByClassName("section2");
+            var section2_middle = section2[0].getElementsByClassName("middle")[0];
+            var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
+            if (document.documentElement.scrollTop > 900) {
+                section2_middle.style.animationName = "section2_middle";
+                section2_middle.style.animationDuration = "1s";
+                section2_middle.style.animationDirection = "normal";
+                section2_middle.style.animationTimingFunction="ease-in";
+                
+
+            }
+            if (document.documentElement.scrollTop > 1500) {
+                section2_bottom.style.animationName = "section2_bottom";
+                section2_bottom.style.animationDuration = "1s";
+                section2_bottom.style.animationDirection = "normal";
+                section2_bottom.style.animationTimingFunction="ease-in";
+
+            }
+
+          console.log("scrollposX:"+document.documentElement.scrollTop );
         }
 
 
@@ -104,6 +169,7 @@
         }
 
         function expand(y, h) {
+            h[0].style.backgroundColor = "darkblue";
             h[0].style.height = "45vh";
             setTimeout(() => {
                 y[0].style.display = "block";
@@ -119,7 +185,7 @@
 
         }
         function collapse(y, h) {
-
+            h[0].style.backgroundColor = "transparent";
             y[0].style.display = "none";
             y[1].style.display = "none";
             y[2].style.display = "none";

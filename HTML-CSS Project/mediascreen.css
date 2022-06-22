@@ -1,12 +1,63 @@
 @media screen and (max-width: 400px) {
 
+
+    @keyframes android_banner {
+    0%{
+       transform: translate(-20vw);
+       
+    }
+    100%{
+        transform: translate(0vw);
+    }
+}
+@keyframes android_section2_middle {
+    0%{
+       transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(0vw);
+    }
+}
+@keyframes android_section2_bottom {
+    0%{
+       transform: translate(100vw);
+    }
+    100%{
+        transform: translate(0vw);
+    }
+}
+@keyframes android_section1 {
+    0%{
+       transform: translateY(30vh);
+      
+    }
+    100%{ 
+        transform: translateY(0vh);
+    }
+}
+
+
+/* animation: forwards;
+    animation-duration: 1s;
+    animation-name: banner;
+    animation-direction: normal; */
+
+
+
+
+
+
+
+
+
     .header-banner {
         width: 100vw;
     }
 
     header {
+        padding-top: 10px;
         display: block;
-        background-color: rgb(55, 0, 255);
+        background-color:transparent;
         padding-bottom: 15px;
         height:8vh;
         transition-property: height;
@@ -29,6 +80,7 @@
 
     header nav ul li {
         display: none;
+        line-height: 25px;
         position: relative;
         margin: 10px;
         padding-right: 170px;
@@ -48,8 +100,8 @@
         display: inline;
         float: right;
         padding-right: 15px;
-        padding-top: 15px;
-    }
+        padding-top: 0px; 
+       }
 
     .banner h1 {
         padding: 0;
@@ -63,6 +115,7 @@
     .banner {
         margin: 0;
         padding: 0;
+        padding-right: 20px;
         padding-top: 180px;
         justify-content: center;
     }
@@ -136,7 +189,6 @@
 
     }
 
-
     .section1 .top {
 
         justify-content: center;
@@ -195,6 +247,8 @@
         padding-right: 10px;
         padding-bottom: 30px;
     }
+
+  
 
 
     .section2 {
