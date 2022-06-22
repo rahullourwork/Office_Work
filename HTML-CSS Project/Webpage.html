@@ -66,47 +66,57 @@
 
     <script>
 
-        function myFunction(x) {            
-            var y=document.querySelectorAll("ul > li");
-            var temp;
-            expand(temp,y);
-            if(temp==1)
-            {
-                collapse(y);
+        function myFunction(x) {
+            var h=document.getElementsByTagName("header");
+            
+            var y = document.querySelectorAll("ul > li");
+            if (y[0].style.display == "block") {
+                collapse(y,h);
             }
-            
-            
+            else {
+                expand(y,h);
+            }
+
+
         }
 
-        function expand(temp,y)
-        {
-            y[0].style.display="block";
-            y[1].style.display="block";
-            y[2].style.display="block";
-            y[3].style.display="block";
-            y[4].style.display="block";
-            y[5].style.display="block";
-            
-           console.log(y);
-           temp=1;
+        function expand(y,h) {
+             h[0].style.height="45vh";
+             setTimeout(() => {  
+            y[0].style.display = "block";
+            y[1].style.display = "block";
+            y[2].style.display = "block";
+            y[3].style.display = "block";
+            y[4].style.display = "block";
+            y[5].style.display = "block";
+
+            console.log(y);
+
+              }, 200);
            
+        }
+        function collapse(y,h) {
+           
+            y[0].style.display = "none";
+            y[1].style.display = "none";
+            y[2].style.display = "none";
+            y[3].style.display = "none";
+            y[4].style.display = "none";
+            y[5].style.display = "none";
+            h[0].style.height="8vh";
 
+            console.log(y);
         }
-        function collapse(y){
-            y[0].style.display="none";
-            y[1].style.display="none";
-            y[2].style.display="none";
-            y[3].style.display="none";
-            y[4].style.display="none";
-            y[5].style.display="none";
-            
-           console.log(y);
-        }
+
+
+
+
+
 
 
     </script>
 
-  
+
 
     <section class="section0">
 
@@ -416,7 +426,7 @@
 
     </section>
 
-   
+
 
 
 

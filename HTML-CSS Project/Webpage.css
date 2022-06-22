@@ -4,12 +4,6 @@
     padding: 0%;
 }
 
-header{
-    transition-property: height;
-    transition-timing-function: ease-in;
-    transition-duration: 5s;
-}
-
 
 #nav-button {
     display: none;
@@ -35,6 +29,9 @@ header{
     color: black;
     margin-right: 15px;
     justify-content: center;
+    border: solid white 1px;
+    font-size: 15px;
+
     height: 8vh;
     width: 12vw;
 
@@ -43,11 +40,10 @@ header{
 .learn_more {
     background-color: transparent;
     color: white;
-    border: 2px solid white;
-    margin-top: 10px;
-    height: 8vh;
-    width: 12vw;
-    justify-content: center;
+    border: solid white 2px;
+    font-size: 15px;
+
+
 
 }
 
@@ -250,6 +246,7 @@ footer {
 
 .section2 .middle img {
     margin-left: 130px;
+    box-shadow: 0 8px 17px 0 rgba(34, 33, 33, 0.904), 0 6px 20px 0 rgb(0 0 0 / 19%);
     width: 40vw;
     height: 50vh;
     border-radius: 3px;
@@ -277,6 +274,7 @@ footer {
 }
 
 .section2 .bottom img {
+    box-shadow: 0 8px 17px 0 rgba(34, 33, 33, 0.904), 0 6px 20px 0 rgb(0 0 0 / 19%);
     border-radius: 3px;
     width: 40vw;
     height: 50vh;
@@ -313,6 +311,7 @@ footer {
 .section3 .top h1 {
     font-size: 40px;
     font-weight: 200;
+    margin-bottom: 30px;
     padding-bottom: 15px;
 }
 
@@ -337,6 +336,7 @@ footer {
 }
 
 .section3 .bottom p {
+
     font-weight: 1000;
 }
 
@@ -465,6 +465,7 @@ footer {
 
 .section4 .bottom img {
     border-radius: 6px;
+    box-shadow: 0 8px 17px 0 rgba(34, 33, 33, 0.904), 0 6px 20px 0 rgb(0 0 0 / 19%);
 
 
 
