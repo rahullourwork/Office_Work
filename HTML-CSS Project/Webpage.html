@@ -64,46 +64,69 @@
 
 <body>
 
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        
+        var h = document.getElementsByTagName("nav");
+        function scrollFunction() {
+          
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+               
+                h[0].style.paddingBottom="2.5vh";
+                h[0].style.paddingTop="0.5vh";
+                document.getElementsByTagName("header")[0].style.backgroundColor = "blueviolet";
+            } else {
+                h[0].style.paddingBottom="3vh";
+                h[0].style.paddingTop="2vh";
+                document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
+            }
+        }
+
+
+    </script>
+
+
     <script>
 
         function myFunction(x) {
-            var h=document.getElementsByTagName("header");
-            
+            var h = document.getElementsByTagName("header");
+
             var y = document.querySelectorAll("ul > li");
             if (y[0].style.display == "block") {
-                collapse(y,h);
+                collapse(y, h);
             }
             else {
-                expand(y,h);
+                expand(y, h);
             }
 
 
         }
 
-        function expand(y,h) {
-             h[0].style.height="45vh";
-             setTimeout(() => {  
-            y[0].style.display = "block";
-            y[1].style.display = "block";
-            y[2].style.display = "block";
-            y[3].style.display = "block";
-            y[4].style.display = "block";
-            y[5].style.display = "block";
+        function expand(y, h) {
+            h[0].style.height = "45vh";
+            setTimeout(() => {
+                y[0].style.display = "block";
+                y[1].style.display = "block";
+                y[2].style.display = "block";
+                y[3].style.display = "block";
+                y[4].style.display = "block";
+                y[5].style.display = "block";
 
-            console.log(y);
+                console.log(y);
 
-              }, 200);
-           
+            }, 200);
+
         }
-        function collapse(y,h) {
-           
+        function collapse(y, h) {
+
             y[0].style.display = "none";
             y[1].style.display = "none";
             y[2].style.display = "none";
             y[3].style.display = "none";
             y[4].style.display = "none";
             y[5].style.display = "none";
-            h[0].style.height="8vh";
+            h[0].style.height = "8vh";
 
             console.log(y);
         }

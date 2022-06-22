@@ -4,6 +4,23 @@
     padding: 0%;
 }
 
+header{
+    color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    box-shadow: 1px 1px 3px#2b2828ab;
+    
+    
+}
+
+nav{
+    transition: ease-in ;
+    transition-duration: .2s;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+}
+
 
 #nav-button {
     display: none;
@@ -47,14 +64,6 @@
 
 }
 
-.header-banner header {
-    color: white;
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-    box-shadow: 1px 1px 3px#2b2828ab;
-}
-
 .banner h1 {
     font-size: 40px;
 
@@ -82,19 +91,19 @@
 nav p {
     font-weight: 800;
     font-size: 20px;
+    justify-content: center;
+    text-align: center;
     display: inline-flex;
     padding-left: 80px;
-    padding-top: 20px;
+    padding-top: 1vh;
+   
 }
 
 nav ul {
     display: inline;
     float: right;
     text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
     padding-right: 80px;
-
 
 }
 
@@ -303,7 +312,7 @@ footer {
 }
 
 .section3 {
-    background-color: #3949ab;
+    background-color: #111849;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -378,7 +387,7 @@ footer {
 
 
 .section3 .bottom .box1 {
-    background-image: linear-gradient(to bottom, rgba(58, 58, 49, 0.5), rgba(36, 36, 39, 0)), url('section-3.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.897), rgba(36, 36, 39, 0)), url('section-3.jpg');
     background-size: auto 915px;
     padding-top: 15px;
     line-height: 10vh;
@@ -393,7 +402,7 @@ footer {
 }
 
 .section3 .bottom .box2 {
-    background-image: linear-gradient(to bottom, rgba(0, 62, 133, 0.938), rgba(60, 116, 102, 0)), url('section-3.jpg');
+    background-image: linear-gradient(to bottom, rgb(0, 27, 59), rgba(60, 116, 102, 0)), url('section-3.jpg');
     background-size: auto 915px;
     padding-top: 15px;
     line-height: 10vh;
@@ -409,7 +418,7 @@ footer {
 }
 
 .section3 .bottom .box3 {
-    background-image: linear-gradient(to bottom, rgba(136, 20, 0, 0.849), rgba(134, 88, 88, 0)), url('section-3.jpg');
+    background-image: linear-gradient(to bottom, rgb(107, 0, 32), rgba(134, 88, 88, 0)), url('section-3.jpg');
     background-size: auto 915px;
     padding-top: 15px;
     line-height: 10vh;
