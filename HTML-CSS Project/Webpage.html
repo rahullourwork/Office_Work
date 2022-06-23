@@ -11,7 +11,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Webpage.css">
-    <link rel="stylesheet" href="/mediascreen.css">
+    <link rel="stylesheet" href="mediascreen.css">
 
     <section class="header-banner">
         <header>
@@ -64,93 +64,223 @@
 
 <body>
 
-<script>
-     window.onscroll = function () { scrollFunction() };
-       
-       function scrollFunction() {
-             var section1 = document.getElementsByClassName("section1");
-            var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
-            if (document.documentElement.scrollTop > 1850) {
-                section1_bottom.style.animationName = "android_section1";
-                section1_bottom.style.animationDuration = "1s";
-                section1_bottom.style.animationDirection = "normal";
 
-            }
+    <script>
 
-            var section2 = document.getElementsByClassName("section2");
-            var section2_middle = section2[0].getElementsByClassName("middle")[0];
-            var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
-            if (document.documentElement.scrollTop > 2700) {
-                section2_middle.style.animationName = "android_section2_middle";
-                section2_middle.style.animationDuration = "1s";
-                section2_middle.style.animationDirection = "normal";
-                section2_middle.style.animationTimingFunction="ease-in";
-                
+        window.onload = function () { test() };
 
-            }
-            if (document.documentElement.scrollTop > 3670) {
-                section2_bottom.style.animationName = "android_section2_bottom";
-                section2_bottom.style.animationDuration = "1s";
-                section2_bottom.style.animationDirection = "normal";
-                section2_bottom.style.animationTimingFunction="ease-in";
+        function test() {
 
-            }
-
+            var banner = document.getElementsByClassName("banner");
+            banner[0].style.visibility = "visible";
+            banner[0].style.animationName = "banner";
+            banner[0].style.animationDuration = "1s";
+            banner[0].style.animationDirection = "normal";
         }
 
+// error here ==--------------------------- for >400
 
-</script>
-    <script>
+        if (document.documentElement.clientWidth > 600) {
+
         window.onscroll = function () { scrollFunction() };
+        console.log(document.documentElement.clientWidth);
        
-        var h = document.getElementsByTagName("nav");
         function scrollFunction() {
+                        
+                console.log(document.documentElement.clientWidth);
+                var h = document.getElementsByTagName("nav");
+                if (document.documentElement.scrollTop > 0) {
 
-            if (document.documentElement.scrollTop > 0) {
+                    h[0].style.paddingBottom = "2.5vh";
+                    h[0].style.paddingTop = "1vh";
+                    document.getElementsByTagName("header")[0].style.backgroundColor = "darkblue";
+                } else {
+                    h[0].style.paddingBottom = "3vh";
+                    h[0].style.paddingTop = "2vh";
+                    document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
+                }
 
-                h[0].style.paddingBottom = "2.5vh";
-                h[0].style.paddingTop = "1vh";
-                document.getElementsByTagName("header")[0].style.backgroundColor = "darkblue";
-            } else {
-                h[0].style.paddingBottom = "3vh";
-                h[0].style.paddingTop = "2vh";
-                document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
+
+                if (document.documentElement.scrollTop > 616) {
+                    var section1 = document.getElementsByClassName("section1");
+                    var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
+                    section1_bottom.style.visibility = "visible";
+                    section1_bottom.style.animationName = "section1";
+                    section1_bottom.style.animationDuration = "1s";
+                    section1_bottom.style.animationDirection = "normal";
+                    console.log("working --------------------------------------");
+
+                }
+
+
+                if (document.documentElement.scrollTop > 1124) {
+
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_middle = section2[0].getElementsByClassName("middle")[0];
+                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
+                    section2_middle.style.visibility = "visible";
+                    section2_middle.style.animationName = "section2_middle";
+                    section2_middle.style.animationDuration = "1s";
+                    section2_middle.style.animationDirection = "normal";
+                    section2_middle.style.animationTimingFunction = "ease-in";
+
+
+                }
+                if (document.documentElement.scrollTop > 1782) {
+
+                    section2_bottom.style.visibility = "visible";
+
+                    section2_bottom.style.animationName = "section2_bottom";
+                    section2_bottom.style.animationDuration = "1s";
+                    section2_bottom.style.animationDirection = "normal";
+                    section2_bottom.style.animationTimingFunction = "ease-in";
+
+                }
+
+
+
+                if (document.documentElement.scrollTop > 2614) {
+
+                    var section3 = document.getElementsByClassName("section3");
+                    // var section2_middle = section2[0].getElementsByClassName("middle")[0];
+                    var section3_bottom = section3[0].getElementsByClassName("bottom")[0];
+                    section3_bottom.style.visibility = "visible";
+
+                    section3_bottom.style.animationName = "section3_bottom";
+                    section3_bottom.style.animationDuration = ".5s";
+                    section3_bottom.style.animationDirection = "normal";
+                    section3_bottom.style.animationTimingFunction = "linear";
+                }
+
+
+
+
+
+
+                if (document.documentElement.scrollTop > 3360) {
+
+                    var section4 = document.getElementsByClassName("section4");
+                    var section4_bottom = section4[0].getElementsByClassName("bottom");
+                    var section4_box1 = section4_bottom[0].getElementsByClassName("box1");
+                    var section4_box2 = section4_bottom[0].getElementsByClassName("box2");
+                    var section4_box3 = section4_bottom[0].getElementsByClassName("box3");
+                    var section4_box4 = section4_bottom[0].getElementsByClassName("box4");
+                    section4_box1[0].style.visibility = "visible";
+
+                    section4_box1[0].style.animationName = "section4_box1";
+                    section4_box1[0].style.animationDuration = "1s";
+                    section4_box1[0].style.animationDirection = "normal";
+                    section4_box1[0].style.animationTimingFunction = "ease";
+
+
+                }
+                if (document.documentElement.scrollTop > 3360) {
+
+                    section4_box2[0].style.visibility = "visible";
+                    section4_box2[0].style.animationDuration = "1s";
+                    section4_box2[0].style.animationName = "section4_box2";
+                    section4_box2[0].style.animationDirection = "normal";
+                    section4_box2[0].style.animationTimingFunction = "ease";
+
+
+                }
+                if (document.documentElement.scrollTop > 3550) {
+
+                    section4_box3[0].style.visibility = "visible";
+                    section4_box3[0].style.animationDuration = "1s";
+                    section4_box3[0].style.animationName = "section4_box3";
+                    section4_box3[0].style.animationDirection = "normal";
+                    section4_box3[0].style.animationTimingFunction = "ease";
+
+                }
+                if (document.documentElement.scrollTop > 3550) {
+
+                    section4_box4[0].style.visibility = "visible";
+                    section4_box4[0].style.animationDuration = "1s";
+                    section4_box4[0].style.animationName = "section4_box4";
+                    section4_box4[0].style.animationDirection = "normal";
+                    section4_box4[0].style.animationTimingFunction = "ease";
+
+
+                }
+
+
+                if (document.documentElement.scrollTop > 3900) {
+
+                    var section5 = document.getElementsByClassName("section5");
+                    var section5_form = section5[0].getElementsByClassName("form");
+
+                    section5_form[0].style.visibility = "visible";
+                    section5_form[0].style.animationDuration = "1s";
+                    section5_form[0].style.animationName = "section5_form";
+                    section5_form[0].style.animationDirection = "normal";
+                    section5_form[0].style.animationTimingFunction = "ease";
+
+
+                }
+
+
+
+
+                console.log("scrollposX:" + document.documentElement.scrollTop);
+             }
+        }
+
+    </script>
+
+
+
+    <script>
+        if (document.documentElement.clientWidth <= 400) {
+        window.onscroll = function () { scrollFunctionAndroid() };
+
+        function scrollFunctionAndroid() {
+            //console.log(document.documentElement.clientWidth);
+            
+                if (document.documentElement.scrollTop > 1471) {
+
+                    var section1 = document.getElementsByClassName("section1");
+                    var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
+                    section1_bottom.style.visibility = "visible";
+                    section1_bottom.style.animationName = "android_section1";
+                    section1_bottom.style.animationDuration = "1s";
+                    section1_bottom.style.animationDirection = "normal";
+                    console.log("???????????????????????????????????????????????????????????????????????????????????");
+
+                }
+
+
+                if (document.documentElement.scrollTop > 2373) {
+
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_middle = section2[0].getElementsByClassName("middle")[0];
+                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
+                    section2_middle.style.visibility = "visible";
+                    section2_middle.style.animationName = "android_section2_middle";
+                    section2_middle.style.animationDuration = "1s";
+                    section2_middle.style.animationDirection = "normal";
+                    section2_middle.style.animationTimingFunction = "ease-in";
+
+
+                }
+                if (document.documentElement.scrollTop > 3209) {
+
+                    section2_bottom.style.visibility = "visible";
+                    section2_bottom.style.animationName = "android_section2_bottom";
+                    section2_bottom.style.animationDuration = "1s";
+                    section2_bottom.style.animationDirection = "normal";
+                    section2_bottom.style.animationTimingFunction = "ease-in";
+
+                }
+                console.log("scrollposX:" + document.documentElement.scrollTop);
+
+
             }
 
-            var section1 = document.getElementsByClassName("section1");
-            var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
-            if (document.documentElement.scrollTop > 520) {
-                section1_bottom.style.animationName = "section1";
-                section1_bottom.style.animationDuration = "1s";
-                section1_bottom.style.animationDirection = "normal";
-
-            }
-
-            var section2 = document.getElementsByClassName("section2");
-            var section2_middle = section2[0].getElementsByClassName("middle")[0];
-            var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
-            if (document.documentElement.scrollTop > 900) {
-                section2_middle.style.animationName = "section2_middle";
-                section2_middle.style.animationDuration = "1s";
-                section2_middle.style.animationDirection = "normal";
-                section2_middle.style.animationTimingFunction="ease-in";
-                
-
-            }
-            if (document.documentElement.scrollTop > 1500) {
-                section2_bottom.style.animationName = "section2_bottom";
-                section2_bottom.style.animationDuration = "1s";
-                section2_bottom.style.animationDirection = "normal";
-                section2_bottom.style.animationTimingFunction="ease-in";
-
-            }
-
-          console.log("scrollposX:"+document.documentElement.scrollTop );
         }
 
 
     </script>
-
 
     <script>
 
@@ -185,7 +315,13 @@
 
         }
         function collapse(y, h) {
-            h[0].style.backgroundColor = "transparent";
+            if (document.documentElement.scrollTop > 0) {
+                h[0].style.backgroundColor = "darkblue";
+            }
+            else {
+                h[0].style.backgroundColor = "transparent";
+            }
+
             y[0].style.display = "none";
             y[1].style.display = "none";
             y[2].style.display = "none";
@@ -409,62 +545,59 @@
                 expedita.</p>
         </div>
         <div class="bottom">
-            <div class="upper">
-                <div class="box1">
-                    <img src="section4-1.jpg" alt="no image" width="225vw" height="250vh">
-                    <div class="container">
-                        <p>Nicole West</p>
-                        <small>Backend Deveoper</small>
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <br><br><br>
-                        <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
-                        <a href="https://www.google.com"> @Nicole West</a>
-                    </div>
 
-                </div>
-                <div class="box2">
-                    <img src="section4-3.jpg" alt="no image" width="225vw" height="250vh">
-                    <div class="container">
-                        <p>Vincent Harris</p>
-                        <small>Web Developer</small>
-                        <br><br>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        <br><br><br>
-                        <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
-                        <a href="https://www.google.com"> @Nicole West</a>
-                    </div>
-
+            <div class="box1">
+                <img src="section4-1.jpg" alt="no image" width="225vw" height="250vh">
+                <div class="container">
+                    <p>Nicole West</p>
+                    <small>Backend Deveoper</small>
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br><br><br>
+                    <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
+                    <a href="https://www.google.com"> @Nicole West</a>
                 </div>
 
             </div>
-            <div class="lower">
-
-                <div class="box3">
-                    <img src="section4-2.jpg" alt="no image" width="225vw" height="250vh">
-                    <div class="container">
-                        <p>Mark Hall</p>
-                        <small>Lead Designer</small>
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        <br><br><br>
-                        <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
-                        <a href="https://www.google.com"> @Nicole West</a>
-                    </div>
+            <div class="box2">
+                <img src="section4-3.jpg" alt="no image" width="225vw" height="250vh">
+                <div class="container">
+                    <p>Vincent Harris</p>
+                    <small>Web Developer</small>
+                    <br><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br><br><br>
+                    <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
+                    <a href="https://www.google.com"> @Nicole West</a>
                 </div>
-                <div class="box4">
-                    <img src="section4-4.jpg" alt="no image" width="225vw" height="250vh">
-                    <div class="container">
-                        <p>Hannah Zane</p>
-                        <small>Graphics Designer</small>
-                        <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        <br><br><br>
-                        <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
-                        <a href="https://www.google.com"> @Nicole West</a>
-                    </div>
 
+            </div>
+
+            <div class="box3">
+                <img src="section4-2.jpg" alt="no image" width="225vw" height="250vh">
+                <div class="container">
+                    <p>Mark Hall</p>
+                    <small>Lead Designer</small>
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br><br><br>
+                    <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
+                    <a href="https://www.google.com"> @Nicole West</a>
                 </div>
+            </div>
+            <div class="box4">
+                <img src="section4-4.jpg" alt="no image" width="225vw" height="250vh">
+                <div class="container">
+                    <p>Hannah Zane</p>
+                    <small>Graphics Designer</small>
+                    <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <br><br><br>
+                    <i style="color:rgb(0, 153, 255) ;" class="fa-brands fa-twitter"></i>
+                    <a href="https://www.google.com"> @Nicole West</a>
+                </div>
+
+
             </div>
         </div>
     </section>

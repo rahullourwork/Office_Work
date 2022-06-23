@@ -28,8 +28,7 @@
 }
 @keyframes android_section1 {
     0%{
-       transform: translateY(30vh);
-      
+       transform: translateY(50vh);
     }
     100%{ 
         transform: translateY(0vh);
