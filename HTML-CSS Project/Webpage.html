@@ -11,7 +11,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Webpage.css">
-    <link rel="stylesheet" href="mediascreen.css">
+    <link rel="stylesheet" href="/mediascreen.css">
 
     <section class="header-banner">
         <header>
@@ -78,15 +78,15 @@
             banner[0].style.animationDirection = "normal";
         }
 
-// error here ==--------------------------- for >400
+        // error here ==--------------------------- for >400
 
         if (document.documentElement.clientWidth > 600) {
 
-        window.onscroll = function () { scrollFunction() };
-        console.log(document.documentElement.clientWidth);
-       
-        function scrollFunction() {
-                        
+            window.onscroll = function () { scrollFunction() };
+            console.log(document.documentElement.clientWidth);
+
+            function scrollFunction() {
+
                 console.log(document.documentElement.clientWidth);
                 var h = document.getElementsByTagName("nav");
                 if (document.documentElement.scrollTop > 0) {
@@ -100,24 +100,87 @@
                     document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
                 }
 
+                if (document.documentElement.scrollTop > 200) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box1 = section0[0].getElementsByClassName("box1")[0];
+                    var section0_box1_container = section0_box1.getElementsByClassName("container");
+                    section0_box1_container[0].style.visibility = "visible";
+                    section0_box1_container[0].style.animationName = "section0_box1";
+                    section0_box1_container[0].style.animationDuration = "1s";
+                    section0_box1_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 200) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box2 = section0[0].getElementsByClassName("box2")[0];
+                    var section0_box2_container = section0_box2.getElementsByClassName("container");
+                    section0_box2_container[0].style.visibility = "visible";
+                    section0_box2_container[0].style.animationName = "section0_box2";
+                    section0_box2_container[0].style.animationDuration = "1s";
+                    section0_box2_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 200) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box3 = section0[0].getElementsByClassName("box3")[0];
+                    var section0_box3_container = section0_box3.getElementsByClassName("container");
+                    section0_box3_container[0].style.visibility = "visible";
+                    section0_box3_container[0].style.animationName = "section0_box3";
+                    section0_box3_container[0].style.animationDuration = "1s";
+                    section0_box3_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 200) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box4 = section0[0].getElementsByClassName("box4")[0];
+                    var section0_box4_container = section0_box4.getElementsByClassName("container");
+                    section0_box4_container[0].style.visibility = "visible";
+                    section0_box4_container[0].style.animationName = "section0_box4";
+                    section0_box4_container[0].style.animationDuration = "1s";
+                    section0_box4_container[0].style.animationDirection = "normal";
+                }
 
-                if (document.documentElement.scrollTop > 616) {
+
+
+
+                if (document.documentElement.scrollTop > 400) {
                     var section1 = document.getElementsByClassName("section1");
-                    var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
-                    section1_bottom.style.visibility = "visible";
-                    section1_bottom.style.animationName = "section1";
-                    section1_bottom.style.animationDuration = "1s";
-                    section1_bottom.style.animationDirection = "normal";
-                    console.log("working --------------------------------------");
+                    var section1_top = section1[0].getElementsByClassName("top")[0];
+                    var section1_top_container = section1_top.getElementsByClassName("container")[0];
+                    section1_top_container.style.visibility = "visible";
+                    section1_top_container.style.animationName = "section1_top";
+                    section1_top_container.style.animationDuration = "2s";
+                    section1_top_container.style.animationDirection = "normal";
+
 
                 }
 
+
+                if (document.documentElement.scrollTop > 650) {
+                    var section1 = document.getElementsByClassName("section1");
+                    var section1_bottom = section1[0].getElementsByClassName("bottom");
+                    section1_bottom[0].style.visibility = "visible";
+                    section1_bottom[0].style.animationName = "section1_bottom";
+                    section1_bottom[0].style.animationDuration = "1s";
+                    section1_bottom[0].style.animationDirection = "normal";
+
+
+                }
+
+
+                if (document.documentElement.scrollTop > 1000) {
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_top = section2[0].getElementsByClassName("top");
+                    var section2_top_container = section2_top[0].getElementsByClassName("container")[0];
+                    section2_top_container.style.visibility = "visible";
+                    section2_top_container.style.animationName = "section2_top";
+                    section2_top_container.style.animationDuration = "2s";
+                    section2_top_container.style.animationDirection = "normal";
+
+
+                }
 
                 if (document.documentElement.scrollTop > 1124) {
 
                     var section2 = document.getElementsByClassName("section2");
                     var section2_middle = section2[0].getElementsByClassName("middle")[0];
-                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
                     section2_middle.style.visibility = "visible";
                     section2_middle.style.animationName = "section2_middle";
                     section2_middle.style.animationDuration = "1s";
@@ -128,12 +191,25 @@
                 }
                 if (document.documentElement.scrollTop > 1782) {
 
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
                     section2_bottom.style.visibility = "visible";
-
                     section2_bottom.style.animationName = "section2_bottom";
                     section2_bottom.style.animationDuration = "1s";
                     section2_bottom.style.animationDirection = "normal";
                     section2_bottom.style.animationTimingFunction = "ease-in";
+
+                }
+
+                if (document.documentElement.scrollTop > 2500) {
+                    var section3 = document.getElementsByClassName("section3");
+                    var section3_top = section3[0].getElementsByClassName("top")[0];
+                    var section3_top_container = section3_top.getElementsByClassName("container")[0];
+                    section3_top_container.style.visibility = "visible";
+                    section3_top_container.style.animationName = "section3_top";
+                    section3_top_container.style.animationDuration = "2s";
+                    section3_top_container.style.animationDirection = "normal";
+
 
                 }
 
@@ -142,18 +218,27 @@
                 if (document.documentElement.scrollTop > 2614) {
 
                     var section3 = document.getElementsByClassName("section3");
-                    // var section2_middle = section2[0].getElementsByClassName("middle")[0];
                     var section3_bottom = section3[0].getElementsByClassName("bottom")[0];
                     section3_bottom.style.visibility = "visible";
 
                     section3_bottom.style.animationName = "section3_bottom";
-                    section3_bottom.style.animationDuration = ".5s";
+                    section3_bottom.style.animationDuration = "1s";
                     section3_bottom.style.animationDirection = "normal";
-                    section3_bottom.style.animationTimingFunction = "linear";
                 }
 
+                //--
+
+                if (document.documentElement.scrollTop > 3260) {
+                    var section4 = document.getElementsByClassName("section4");
+                    var section4_top = section4[0].getElementsByClassName("top")[0];
+                    var section4_top_container = section4_top.getElementsByClassName("container")[0];
+                    section4_top_container.style.visibility = "visible";
+                    section4_top_container.style.animationName = "section4_top";
+                    section4_top_container.style.animationDuration = "2s";
+                    section4_top_container.style.animationDirection = "normal";
 
 
+                }
 
 
 
@@ -161,51 +246,63 @@
 
                     var section4 = document.getElementsByClassName("section4");
                     var section4_bottom = section4[0].getElementsByClassName("bottom");
-                    var section4_box1 = section4_bottom[0].getElementsByClassName("box1");
-                    var section4_box2 = section4_bottom[0].getElementsByClassName("box2");
-                    var section4_box3 = section4_bottom[0].getElementsByClassName("box3");
-                    var section4_box4 = section4_bottom[0].getElementsByClassName("box4");
-                    section4_box1[0].style.visibility = "visible";
+                    var section4_bottom_box1 = section4_bottom[0].getElementsByClassName("box1");
+                    section4_bottom_box1[0].style.visibility = "visible";
 
-                    section4_box1[0].style.animationName = "section4_box1";
-                    section4_box1[0].style.animationDuration = "1s";
-                    section4_box1[0].style.animationDirection = "normal";
-                    section4_box1[0].style.animationTimingFunction = "ease";
+                    section4_bottom_box1[0].style.animationName = "section4_box1";
+                    section4_bottom_box1[0].style.animationDuration = "1s";
+                    section4_bottom_box1[0].style.animationDirection = "normal";
 
 
                 }
                 if (document.documentElement.scrollTop > 3360) {
-
-                    section4_box2[0].style.visibility = "visible";
-                    section4_box2[0].style.animationDuration = "1s";
-                    section4_box2[0].style.animationName = "section4_box2";
-                    section4_box2[0].style.animationDirection = "normal";
-                    section4_box2[0].style.animationTimingFunction = "ease";
+                    var section4 = document.getElementsByClassName("section4");
+                    var section4_bottom = section4[0].getElementsByClassName("bottom");
+                    var section4_bottom_box2 = section4_bottom[0].getElementsByClassName("box2");
+                    section4_bottom_box2[0].style.visibility = "visible";
+                    section4_bottom_box2[0].style.animationDuration = "1s";
+                    section4_bottom_box2[0].style.animationName = "section4_box2";
+                    section4_bottom_box2[0].style.animationDirection = "normal";
 
 
                 }
                 if (document.documentElement.scrollTop > 3550) {
 
-                    section4_box3[0].style.visibility = "visible";
-                    section4_box3[0].style.animationDuration = "1s";
-                    section4_box3[0].style.animationName = "section4_box3";
-                    section4_box3[0].style.animationDirection = "normal";
-                    section4_box3[0].style.animationTimingFunction = "ease";
+                    var section4 = document.getElementsByClassName("section4");
+                    var section4_bottom = section4[0].getElementsByClassName("bottom");
+                    var section4_bottom_box3 = section4_bottom[0].getElementsByClassName("box3");
+                    section4_bottom_box3[0].style.visibility = "visible";
+                    section4_bottom_box3[0].style.animationDuration = "1s";
+                    section4_bottom_box3[0].style.animationName = "section4_box3";
+                    section4_bottom_box3[0].style.animationDirection = "normal";
 
                 }
                 if (document.documentElement.scrollTop > 3550) {
 
-                    section4_box4[0].style.visibility = "visible";
-                    section4_box4[0].style.animationDuration = "1s";
-                    section4_box4[0].style.animationName = "section4_box4";
-                    section4_box4[0].style.animationDirection = "normal";
-                    section4_box4[0].style.animationTimingFunction = "ease";
+                    var section4 = document.getElementsByClassName("section4");
+                    var section4_bottom = section4[0].getElementsByClassName("bottom");
+                    var section4_bottom_box4 = section4_bottom[0].getElementsByClassName("box4");
+                    section4_bottom_box4[0].style.visibility = "visible";
+                    section4_bottom_box4[0].style.animationDuration = "1s";
+                    section4_bottom_box4[0].style.animationName = "section4_box4";
+                    section4_bottom_box4[0].style.animationDirection = "normal";
 
 
                 }
 
+                if (document.documentElement.scrollTop > 4400) {
+                    var section5 = document.getElementsByClassName("section5");
+                    var section5_top = section5[0].getElementsByClassName("top")[0];
+                    // var section5_top_container = section5_top.getElementsByClassName("container")[0];
+                    section5_top.style.visibility = "visible";
+                    section5_top.style.animationName = "section5_top";
+                    section5_top.style.animationDuration = "2s";
+                    section5_top.style.animationDirection = "normal";
 
-                if (document.documentElement.scrollTop > 3900) {
+
+                }
+
+                if (document.documentElement.scrollTop > 4400) {
 
                     var section5 = document.getElementsByClassName("section5");
                     var section5_form = section5[0].getElementsByClassName("form");
@@ -214,7 +311,6 @@
                     section5_form[0].style.animationDuration = "1s";
                     section5_form[0].style.animationName = "section5_form";
                     section5_form[0].style.animationDirection = "normal";
-                    section5_form[0].style.animationTimingFunction = "ease";
 
 
                 }
@@ -223,7 +319,7 @@
 
 
                 console.log("scrollposX:" + document.documentElement.scrollTop);
-             }
+            }
         }
 
     </script>
@@ -232,46 +328,187 @@
 
     <script>
         if (document.documentElement.clientWidth <= 400) {
-        window.onscroll = function () { scrollFunctionAndroid() };
+            window.onscroll = function () { scrollFunctionAndroid() };
 
-        function scrollFunctionAndroid() {
-            //console.log(document.documentElement.clientWidth);
-            
-                if (document.documentElement.scrollTop > 1471) {
+            function scrollFunctionAndroid() {
+                //console.log(document.documentElement.clientWidth);
 
+                var h = document.getElementsByTagName("nav");
+                if (document.documentElement.scrollTop > 0) {
+
+                    h[0].style.paddingBottom = "2.5vh";
+                    h[0].style.paddingTop = "1vh";
+                    document.getElementsByTagName("header")[0].style.backgroundColor = "darkblue";
+                } else {
+                    h[0].style.paddingBottom = "3vh";
+                    h[0].style.paddingTop = "2vh";
+                    document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
+                }
+
+                if (document.documentElement.scrollTop > 50) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box1 = section0[0].getElementsByClassName("box1")[0];
+                    var section0_box1_container = section0_box1.getElementsByClassName("container");
+                    section0_box1_container[0].style.visibility = "visible";
+                    section0_box1_container[0].style.animationName = "section0_box1_an_androiddroid";
+                    section0_box1_container[0].style.animationDuration = "1s";
+                    section0_box1_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 300) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box2 = section0[0].getElementsByClassName("box2")[0];
+                    var section0_box2_container = section0_box2.getElementsByClassName("container");
+                    section0_box2_container[0].style.visibility = "visible";
+                    section0_box2_container[0].style.animationName = "section0_box2_android";
+                    section0_box2_container[0].style.animationDuration = "1s";
+                    section0_box2_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 640) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box3 = section0[0].getElementsByClassName("box3")[0];
+                    var section0_box3_container = section0_box3.getElementsByClassName("container");
+                    section0_box3_container[0].style.visibility = "visible";
+                    section0_box3_container[0].style.animationName = "section0_box3_android";
+                    section0_box3_container[0].style.animationDuration = "1s";
+                    section0_box3_container[0].style.animationDirection = "normal";
+                }
+                if (document.documentElement.scrollTop > 940) {
+                    var section0 = document.getElementsByClassName("section0");
+                    var section0_box4 = section0[0].getElementsByClassName("box4")[0];
+                    var section0_box4_container = section0_box4.getElementsByClassName("container");
+                    section0_box4_container[0].style.visibility = "visible";
+                    section0_box4_container[0].style.animationName = "section0_box4_android";
+                    section0_box4_container[0].style.animationDuration = "1s";
+                    section0_box4_container[0].style.animationDirection = "normal";
+                }
+
+
+                // if (document.documentElement.scrollTop > 1471) {
+
+                //     var section1 = document.getElementsByClassName("section1");
+                //     var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
+                //     section1_bottom.style.visibility = "visible";
+                //     section1_bottom.style.animationName = "section1_bottom_android";
+                //     section1_bottom.style.animationDuration = "1s";
+                //     section1_bottom.style.animationDirection = "normal";
+                //     console.log("???????????????????????????????????????????????????????????????????????????????????");
+
+                // }
+
+
+
+                if (document.documentElement.scrollTop > 400) {
                     var section1 = document.getElementsByClassName("section1");
-                    var section1_bottom = section1[0].getElementsByClassName("bottom")[0];
-                    section1_bottom.style.visibility = "visible";
-                    section1_bottom.style.animationName = "android_section1";
-                    section1_bottom.style.animationDuration = "1s";
-                    section1_bottom.style.animationDirection = "normal";
-                    console.log("???????????????????????????????????????????????????????????????????????????????????");
+                    var section1_top = section1[0].getElementsByClassName("top")[0];
+                    var section1_top_container = section1_top.getElementsByClassName("container")[0];
+                    section1_top_container.style.visibility = "visible";
+                    section1_top_container.style.animationName = "section1_top_android";
+                    section1_top_container.style.animationDuration = "2s";
+                    section1_top_container.style.animationDirection = "normal";
+
 
                 }
 
+
+                if (document.documentElement.scrollTop > 650) {
+                    var section1 = document.getElementsByClassName("section1");
+                    var section1_bottom = section1[0].getElementsByClassName("bottom");
+                    section1_bottom[0].style.visibility = "visible";
+                    section1_bottom[0].style.animationName = "section1_bottom";
+                    section1_bottom[0].style.animationDuration = "1s";
+                    section1_bottom[0].style.animationDirection = "normal";
+
+
+                }
+
+
+                if (document.documentElement.scrollTop > 1000) {
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_top = section2[0].getElementsByClassName("top");
+                    var section2_top_container = section2_top[0].getElementsByClassName("container")[0];
+                    section2_top_container.style.visibility = "visible";
+                    section2_top_container.style.animationName = "section2_top_android";
+                    section2_top_container.style.animationDuration = "2s";
+                    section2_top_container.style.animationDirection = "normal";
+
+
+                }
 
                 if (document.documentElement.scrollTop > 2373) {
 
                     var section2 = document.getElementsByClassName("section2");
                     var section2_middle = section2[0].getElementsByClassName("middle")[0];
-                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
+                   
                     section2_middle.style.visibility = "visible";
-                    section2_middle.style.animationName = "android_section2_middle";
+                    section2_middle.style.animationName = "section2_middle_android";
                     section2_middle.style.animationDuration = "1s";
                     section2_middle.style.animationDirection = "normal";
                     section2_middle.style.animationTimingFunction = "ease-in";
 
 
                 }
+
+
+
+
+
                 if (document.documentElement.scrollTop > 3209) {
 
+                    var section2 = document.getElementsByClassName("section2");
+                    var section2_bottom = section2[0].getElementsByClassName("bottom")[0];
                     section2_bottom.style.visibility = "visible";
-                    section2_bottom.style.animationName = "android_section2_bottom";
+                    section2_bottom.style.animationName = "section2_bottom_android";
                     section2_bottom.style.animationDuration = "1s";
                     section2_bottom.style.animationDirection = "normal";
                     section2_bottom.style.animationTimingFunction = "ease-in";
 
                 }
+
+
+
+                if (document.documentElement.scrollTop > 2500) {
+                    
+                    var section3 = document.getElementsByClassName("section3");
+                    var section3_top = section3[0].getElementsByClassName("top")[0];
+                    var section3_top_container = section3_top.getElementsByClassName("container")[0];
+                    section3_top_container.style.visibility = "visible";
+                    section3_top_container.style.animationName = "section3_top_android";
+                    section3_top_container.style.animationDuration = "2s";
+                    section3_top_container.style.animationDirection = "normal";
+
+
+                }
+
+
+
+                if (document.documentElement.scrollTop > 2614) {
+
+                    var section3 = document.getElementsByClassName("section3");
+                    var section3_bottom = section3[0].getElementsByClassName("bottom")[0];
+                    section3_bottom.style.visibility = "visible";
+
+                    section3_bottom.style.animationName = "section3_bottom_android";
+                    section3_bottom.style.animationDuration = "1s";
+                    section3_bottom.style.animationDirection = "normal";
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 console.log("scrollposX:" + document.documentElement.scrollTop);
 
 
@@ -346,49 +583,59 @@
     <section class="section0">
 
         <div class="box1">
-            <br>
-            <i class="fa fa-line-chart fa-2x"></i>
-            <br><br>
-            <h3>Agile Framework</h3>
-            <br><br>
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+            <div class="container">
+                <br>
+                <i class="fa fa-line-chart fa-2x"></i>
+                <br><br>
+                <h3>Agile Framework</h3>
+                <br><br>
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+            </div>
+
         </div>
         <div class="box2">
+            <div class="container">
+                <i class="fa fa-industry fa-2x"></i>
+                <br><br>
+                <h3>Corporate Strategy</h3>
+                <br><br>
+                <p>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition</p>
+            </div>
             <br>
-            <i class="fa fa-industry fa-2x"></i>
-            <br><br>
-            <h3>Corporate Strategy</h3>
-            <br><br>
-            <p>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-                proposition</p>
         </div>
         <div class="box3">
-            <br>
-            <i class="fa fa-users fa-2x"></i>
-            <br><br>
-            <h3>Workplace Diversity</h3>
-            <br><br>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and
-                empowerment.</p>
-
+            <div class="container">
+                <br>
+                <i class="fa fa-users fa-2x"></i>
+                <br><br>
+                <h3>Workplace Diversity</h3>
+                <br><br>
+                <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                    empowerment.</p>
+            </div>
         </div>
         <div class="box4">
-            <br>
-            <i class="fa fa-bullhorn fa-2x"></i>
-            <br><br>
-            <h3>Survival Strategies</h3>
-            <br><br>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination.</p>
-
+            <div class="container">
+                <br>
+                <i class="fa fa-bullhorn fa-2x"></i>
+                <br><br>
+                <h3>Survival Strategies</h3>
+                <br><br>
+                <p>Bring to the table win-win survival strategies to ensure proactive domination.</p>
+            </div>
         </div>
     </section>
+
     <section class="section1">
         <div class="top">
-            <h1>Why work with us?</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
-                quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
-                expedita.</p>
-
+            <div class="container">
+                <h1>Why work with us?</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
+                    quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime
+                    rem
+                    expedita.</p>
+            </div>
         </div>
         <div class="bottom">
             <div class="left">
@@ -427,13 +674,13 @@
     <section class="section2">
 
         <div class="top">
-            <h1>Our Best Projects</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
-                quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
-                expedita.</p>
-
-
-        </div>
+            <div class="container">
+                <h1>Our Best Projects</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
+                    quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
+                    expedita.</p>
+            </div>
+            </div>
         <div class="middle">
             <img src="section2-1.jpg" alt="project image 1">
             <div class="content">
@@ -498,10 +745,12 @@
 
     <section class="section3">
         <div class="top">
-            <h1>Our Pricing Plans</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
-                quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
-                expedita.</p>
+            <div class="container">
+                <h1>Our Pricing Plans</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
+                    quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
+                    expedita.</p>
+            </div>
         </div>
         <div class="bottom">
             <div class="box1">
@@ -539,10 +788,12 @@
 
     <section class="section4">
         <div class="top">
-            <h1>Our Team Members</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
-                quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
-                expedita.</p>
+            <div class="container">
+                <h1>Our Team Members</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet eos laudantium, non aliquid
+                    quasi adipisci officia minima odit tenetur modi aliquam quaerat, fugiat molestias nulla ab maxime rem
+                    expedita.</p>
+            </div>
         </div>
         <div class="bottom">
 
@@ -602,10 +853,12 @@
         </div>
     </section>
     <section class="section5">
-        <h1>Contact Us</h1>
-        <p class="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. At libero dignissimos praesentium
-            voluptate, rerum
-            veritatis distinctio corporis obcaecati possimus non error culpa a illo ad.</p>
+        <div class="top">
+            <h1>Contact Us</h1>
+            <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. At libero dignissimos praesentium
+                voluptate, rerum
+                veritatis distinctio corporis obcaecati possimus non error culpa a illo ad.</p>
+        </div>
         <div class="form">
             <form action="">
                 <input id="name" type="text" name="name" value="Your name">
