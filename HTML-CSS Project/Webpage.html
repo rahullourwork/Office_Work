@@ -66,6 +66,17 @@
 
 
     <script>
+        fetch('https://reqres.in/api/users?page=2')
+            .then(response => response.json())
+            .then(data => {
+                let apiData=data
+                console.log(data.data[0].email)
+
+            }
+            )
+            .catch(error => console.error(error))
+
+
 
         window.onload = function () { test() };
 
@@ -247,6 +258,9 @@
                     var section4 = document.getElementsByClassName("section4");
                     var section4_bottom = section4[0].getElementsByClassName("bottom");
                     var section4_bottom_box1 = section4_bottom[0].getElementsByClassName("box1");
+                    var section4_bottom_box1_img = section4_bottom_box1[0].getElementsByTagName("img");
+                    console.log("++++++++++++++++++++++++++"+data.data[0].avatar);
+                    // section4_bottom_box1_img.style.src=data.data[0].avatar;
                     section4_bottom_box1[0].style.visibility = "visible";
 
                     section4_bottom_box1[0].style.animationName = "section4_box1";
@@ -518,7 +532,7 @@
                     section3_bottom_box2[0].style.animationDirection = "normal";
                 }
 
-                 
+
                 if (document.documentElement.scrollTop > 5600) {
 
                     var section3 = document.getElementsByClassName("section3");
