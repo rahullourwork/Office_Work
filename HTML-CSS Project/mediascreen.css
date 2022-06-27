@@ -202,7 +202,7 @@
 
 @keyframes section4_box2_android {
     0% {
-        transform: translate(50vw);
+        transform: translate(-20vw);
 
     }
 
@@ -213,18 +213,19 @@
 
 @keyframes section4_box3_android {
     0% {
-        transform: translate(-20vw);
+        transform: translate(50vw);
 
     }
 
     100% {
         transform: translate(0vw);
     }
+   
 }
 
 @keyframes section4_box4_android {
     0% {
-        transform: translate(120vw);
+        transform: translate(-20vw);
 
     }
 
@@ -330,11 +331,9 @@ animation-direction: normal; */
     }
 
     header {
-        padding-top: 10px;
+       
         display: block;
         background-color: transparent;
-        padding-bottom: 15px;
-        height: 8vh;
         transition-property: height;
         transition-timing-function: ease-in;
         transition-duration: 0.2s;
@@ -342,15 +341,27 @@ animation-direction: normal; */
 
     #download {
 
-        width: 25vw;
-        padding-right: 5px;
-        padding-top: 3px;
+        padding-left: 6px;
+        width: 26vw;
+        height: 6vh;
+        font-size: inherit;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 2px 2px 2px #201e1ea1;
+        color: white;
+        background-color: rgb(228, 19, 19);
+        margin-bottom: 2px;
     }
 
     #nav-button {
         display: inline;
         position: absolute;
         right: 10px;
+    }
+
+    nav{
+        padding-top: 2vh;
+        padding-bottom: 3vh;
     }
 
     header nav ul li {
@@ -366,7 +377,9 @@ animation-direction: normal; */
         text-align: center;
         justify-content: center;
         padding-left: 35px;
+        padding-top: 0px;
         font-weight: 100;
+        padding-top: 2px;
         margin: 0;
         float: left;
     }
@@ -804,7 +817,7 @@ animation-direction: normal; */
 
     .section4 .bottom .container {
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 4%;
         padding: 0%;
         width: 50vw;
         float: none;
