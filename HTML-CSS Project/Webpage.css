@@ -236,7 +236,7 @@ header {
 nav {
     transition: ease-in;
     transition-duration: .2s;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
     padding-top: 2vh;
 }
 
@@ -311,10 +311,10 @@ nav {
     font-size: inherit;
     border: none;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px#201e1ea1;
+    box-shadow: 2px 2px 2px #201e1ea1;
     color: white;
     background-color: rgb(228, 19, 19);
-
+    margin-bottom: 2px;
 }
 
 nav p {
