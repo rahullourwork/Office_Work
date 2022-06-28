@@ -1,1 +1,5 @@
-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
+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
+
+// usb cmd
+sudo woeusb --device '/home/rahul/Downloads/Win10_21H2_English_x64.iso'  /dev/sdb --target-filesystem FAT
+
