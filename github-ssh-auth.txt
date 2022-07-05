@@ -1,0 +1,223 @@
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git push
+Username for 'https://github.com': rahullourwork
+Password for 'https://rahullourwork@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/rahullourwork/Office_Work/'
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-keygen -t ed25519 -C "rahul.lour@w3villa.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/rahul/.ssh/id_ed25519): key.txt
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in key.txt
+Your public key has been saved in key.txt.pub
+The key fingerprint is:
+SHA256:zRGR9OiHQzXaIdygTbCoTy1MVAmyJN4dYAZN7V0EnzY rahul.lour@w3villa.com
+The key's randomart image is:
++--[ED25519 256]--+
+|  o+Bo+o+BO=+    |
+| . *.=.o.*+X.o   |
+|  . o.+.o.E o    |
+|     +...* +     |
+|    . + S * .    |
+|     o .   o     |
+|      .          |
+|                 |
+|                 |
++----[SHA256]-----+
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ eval "$(ssh-agent -s)"
+Agent pid 13715
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add ~/.ssh/key.txt
+/home/rahul/.ssh/key.txt: No such file or directory
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add ~/key.txt
+/home/rahul/key.txt: No such file or directory
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add '/home/rahul/Desktop/Git_Repo/key.txt' 
+Identity added: /home/rahul/Desktop/Git_Repo/key.txt (rahul.lour@w3villa.com)
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ls -al ~/.ssh
+total 8
+drwx------  2 rahul rahul 4096 Jun 27 16:24 .
+drwxr-x--- 21 rahul rahul 4096 Jun 28 12:55 ..
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add -D
+All identities removed.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ls -al ~/.ssh
+total 8
+drwx------  2 rahul rahul 4096 Jun 27 16:24 .
+drwxr-x--- 21 rahul rahul 4096 Jun 28 12:55 ..
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ Check user → ssh -T git@gitlab.com
+Command 'Check' not found, did you mean:
+  command 'check' from deb gitlab-shell (13.19.1-2)
+Try: sudo apt install <deb name>
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ sudo -i
+[sudo] password for rahul: 
+root@rahul-Latitude-3400:~# ssh-keygen -t ed25519 -C "your_email@example.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/root/.ssh/id_ed25519): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_ed25519
+Your public key has been saved in /root/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:YIz2fF6Z6HQ8UIUfpkFlLkBGonJXVH9hpf5ZvmhdgMo your_email@example.com
+The key's randomart image is:
++--[ED25519 256]--+
+|      .+Bo+++ o..|
+|     + + oo+o. o |
+|  . = = . .=ooo  |
+|   + = . +.+oo.  |
+|      o S.B.  ...|
+|       = oE.   o+|
+|        o     ..+|
+|             ....|
+|            .. . |
++----[SHA256]-----+
+root@rahul-Latitude-3400:~# ls -al ~/.ssh
+total 16
+drwx------ 2 root root 4096 Jun 29 10:22 .
+drwx------ 7 root root 4096 Jun 29 10:22 ..
+-rw------- 1 root root  419 Jun 29 10:22 id_ed25519
+-rw-r--r-- 1 root root  104 Jun 29 10:22 id_ed25519.pub
+root@rahul-Latitude-3400:~# ssh-add -D
+Could not open a connection to your authentication agent.
+root@rahul-Latitude-3400:~# exit
+logout
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add -D
+All identities removed.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ls -al ~/.ssh
+total 8
+drwx------  2 rahul rahul 4096 Jun 27 16:24 .
+drwxr-x--- 21 rahul rahul 4096 Jun 28 12:55 ..
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-keygen -t ed25519 -C "rahul.lour@w3villa.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/rahul/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/rahul/.ssh/id_ed25519
+Your public key has been saved in /home/rahul/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:0hPGUyO6KuoTJllpmr6o3F6WxAxptUAVXZwZ5G45B90 rahul.lour@w3villa.com
+The key's randomart image is:
++--[ED25519 256]--+
+|  .o.+o =+*      |
+|    + .+.*...    |
+|   = .. =o . E   |
+|  = +  +.oo      |
+| *   +o S= .     |
+|=o  ......o      |
+|+ o .+           |
+|o+..o            |
+|*++o             |
++----[SHA256]-----+
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ls -al ~/.ssh
+total 16
+drwx------  2 rahul rahul 4096 Jun 29 10:25 .
+drwxr-x--- 21 rahul rahul 4096 Jun 28 12:55 ..
+-rw-------  1 rahul rahul  419 Jun 29 10:25 id_ed25519
+-rw-r--r--  1 rahul rahul  104 Jun 29 10:25 id_ed25519.pub
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ id_ed25519.pub
+id_ed25519.pub: command not found
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ eval "$(ssh-agent -s)"
+Agent pid 16109
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add ~/.ssh/id_ed25519.pub
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/rahul/.ssh/id_ed25519.pub' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh-add ~/.ssh/id_ed25519
+Identity added: /home/rahul/.ssh/id_ed25519 (rahul.lour@w3villa.com)
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPsVAQk2Mzk758yUpX+5833W7K1zf2+KO0/CLBc8bjHY rahul.lour@w3villa.com
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi rahullourwork! You've successfully authenticated, but GitHub does not provide shell access.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	key.txt.pub
+
+nothing added to commit but untracked files present (use "git add" to track)
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git add .
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git commit -m "added ssh auth"
+[master 1004e20] added ssh auth
+ 1 file changed, 1 insertion(+)
+ create mode 100644 key.txt.pub
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git push
+Username for 'https://github.com':        
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/rahullourwork/Office_Work/'
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git add remote username
+fatal: pathspec 'remote' did not match any files
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote add  username
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote add  username "rahullourwork"
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote add  email  "rahul.lour@w3villa.com"
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git push
+Username for 'https://github.com': rahul lour
+Password for 'https://rahul lour@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/rahullourwork/Office_Work/'
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote -v
+email	rahul.lour@w3villa.com (fetch)
+email	rahul.lour@w3villa.com (push)
+origin	https://github.com/rahullourwork/Office_Work (fetch)
+origin	https://github.com/rahullourwork/Office_Work (push)
+username	rahullourwork (fetch)
+username	rahullourwork (push)
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote add origin git@github.com:rahullourwork/Office_Work.git
+error: remote origin already exists.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote remove origin
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote add origin git@github.com:rahullourwork/Office_Work.git
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git remote -v
+email	rahul.lour@w3villa.com (fetch)
+email	rahul.lour@w3villa.com (push)
+origin	git@github.com:rahullourwork/Office_Work.git (fetch)
+origin	git@github.com:rahullourwork/Office_Work.git (push)
+username	rahullourwork (fetch)
+username	rahullourwork (push)
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ ^C
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ git push --set-upstream origin master
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:rahullourwork/Office_Work.git
+   0810e99..1004e20  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+rahul@rahul-Latitude-3400:~/Desktop/Git_Repo$ 
+
