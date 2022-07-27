@@ -2,15 +2,15 @@
 
 <h1>Create a new article</h1>
 
-<% if @show.errors.any? %> 
+
+<% if @store.errors.any? %> 
   <h2>The following errors prevented the article from being saved</h2> 
   <ul> 
-    <% @show.errors.full_messages.each do |msg| %> 
+    <%= @store.errors.full_messages.each do |msg| %> 
       <li><%= msg %></li> 
     <% end %> 
   </ul>
 <% end %>
-
 
 <%= form_with scope: :article, url: articles_path, local: true do |f| %>
 
@@ -35,27 +35,3 @@
 
 <% end %> 
 
-
-
-# <html>
-# <h1>
-# Create new article here :
-# <h1>
-# <%= form_with url: "/articles/new", method: :get do |form| %>
-#     <%= form.label :title, "Title:" %>
-#     <br/>
-#     <%= form.text_field :title %>
-#     <br/>
-#     <%= form.label :des, "Description:" %>
-#     <br/>
-#     <%= form.text_field :des %>
-#     <br/>
-#     <%= form.label :author, "Author:" %>
-#     <br/>
-#     <%= form.text_field :author %>
-#     <br/>    <br/>
-
-#     <%= form.submit "Save New Article" %>
-#   <% end %>
-
-# </html>
