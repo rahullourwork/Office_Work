@@ -5,4 +5,5 @@ Rails.application.routes.draw do
    # root "articles#show"
   
       resources :articles
+       
 end

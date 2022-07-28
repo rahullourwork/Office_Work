@@ -1,11 +1,14 @@
 class ArticlesController < ApplicationController
+   
+   before_action :set_article, only: [:show, :edit, :update, :destroy]
+   
     def index
         @articles = Article.all 
     end
     
     def show
         #byebug
-     @article = Article.find(params[:id])
+    
     end
  
     def new
@@ -14,12 +17,12 @@ class ArticlesController < ApplicationController
 
     def edit
        # byebug
-        @article = Article.find(params[:id])
+       
     end
 
     def create
      
-        @store = Article.new(params.require(:article).permit(:title, :des, :author))
+        @store = Article.new(article_params)
         # render plain: @store.inspect
         if @store.save
             flash[:notice] = "Article was created successfully."
@@ -32,13 +35,31 @@ class ArticlesController < ApplicationController
 
     def update
     # byebug
-    @article = Article.find(params[:id])
-    if  @article.update(params.require(:article).permit(:title, :des, :author))
+    
+    if  @article.update(article_params)
         flash[:notice] = "Article was updated successfully."
         redirect_to articles_path
     else
         render :edit
     end
     end
+
+    def destroy
+        
+        @article.destroy
+        redirect_to :action => :index
+    end
+
+    private
+
+    def set_article
+     @article = Article.find(params[:id])
+    end
+
+    def article_params
+        params.require(:article).permit(:title, :des, :author)
+    end
+    
+
 
 end
