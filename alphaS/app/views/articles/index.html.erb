@@ -1,0 +1,29 @@
+
+<% flash.each do |name ,msg| %>
+    <%= msg %>
+    <% end %>
+    
+<h1> Showing Article Details : </h1>
+<body>
+  <% @articles.each do |article| %>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Description</th>
+<th>Author</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <%= article.title %></td>
+<td> <%= article.des %></td>
+<td> <%= article.author %></td>
+</tr>
+</tbody>
+
+</table>
+ <% end %>
+</body>

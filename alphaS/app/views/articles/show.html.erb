@@ -1,21 +1,20 @@
-<h1>
+<% flash.each do |name ,msg| %>
+  <%= msg %>
+  <% end %>
 
- Showing Article Details : 
+<h1>Showing Article Details : 
 </h1>
 <body>
 <ul>
-  <% @articles.each do |article| %>
-    <li>
-    Title:  <%= article.title %>
-    </li>
-    <li>
-    Description:  <%= article.des %>
-    </li>
-    <li>
-    Author:  <%= article.author %>
-    </li>
-    <br>
-    <% end %>
- 
+<li>
+Title:  <%= @article.title %>
+</li>
+<li>
+Description:  <%= @article.des %>
+</li>
+<li>
+Author:  <%= @article.author %>
+</li>
+<br> 
 </ul>
 </body>
