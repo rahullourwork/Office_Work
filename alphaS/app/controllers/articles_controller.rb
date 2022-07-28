@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     end
  
     def new
-         @store = Article.new
+         @article = Article.new
     end
 
     def edit
